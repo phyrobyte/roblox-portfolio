@@ -1,7 +1,7 @@
 /* Base styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #121212;
+    background-color: #0F0529;
     color: #e0e0e0;
     margin: 0;
     padding: 0;
@@ -12,12 +12,13 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #1f1f1f;
+    background-color: #4A2574;
     border-bottom: 2px solid #333;
 }
 
 header h1 {
     margin: 0;
+    color: #9E72C3;
 }
 
 header nav ul {
@@ -27,18 +28,18 @@ header nav ul {
     padding: 0;
 }
 
-header nav ul li {
+header nav ul.tabs li {
     margin-right: 20px;
 }
 
-header nav ul li a {
+header nav ul.tabs li a {
     color: #e0e0e0;
     text-decoration: none;
     font-weight: bold;
 }
 
 header button {
-    background-color: #333;
+    background-color: #7338A0;
     color: #e0e0e0;
     border: none;
     padding: 10px 20px;
@@ -53,6 +54,11 @@ header button {
     background-color: #1f1f1f;
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s ease;
+}
+
+.content:hover {
+    transform: scale(1.02);
 }
 
 .project {
@@ -62,7 +68,7 @@ header button {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #1f1f1f;
+    background-color: #4A2574;
     border-top: 2px solid #333;
 }
 
@@ -103,4 +109,14 @@ footer {
 
 .hidden {
     display: none;
+}
+
+/* Animation */
+.content {
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
