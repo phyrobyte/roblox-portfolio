@@ -1,16 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const themeToggleBtn = document.getElementById("theme-toggle");
     const adminLoginBtn = document.getElementById("admin-login-btn");
     const adminModal = document.getElementById("admin-modal");
     const closeModal = document.getElementById("close-modal");
     const loginBtn = document.getElementById("login-btn");
     const adminPasswordInput = document.getElementById("admin-password");
     const adminActions = document.getElementById("admin-actions");
-
-    // Dark/Light theme toggle
-    themeToggleBtn.addEventListener("click", function () {
-        document.body.classList.toggle("light-theme");
-    });
 
     // Open admin login modal
     adminLoginBtn.addEventListener("click", function () {
@@ -25,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Simple password check (for demo purposes, replace with a real auth system)
     loginBtn.addEventListener("click", function () {
         const password = adminPasswordInput.value;
-        if (password === "yourpassword") {  // Change "yourpassword" to a secure password
+        if (password === "1821") {  // Updated password to 1821
             adminActions.classList.remove("hidden");
         } else {
             alert("Incorrect password!");
